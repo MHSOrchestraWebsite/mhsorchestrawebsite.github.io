@@ -1,0 +1,56 @@
+body {
+    background-image: url("/assets/orchestra-stock.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+}
+.site {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+    padding-top: 5%;
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+.inline-image {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.topheader {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navigation p {
+    text-align: center;
+}
+.navigation a {
+    text-decoration: none;
+}
+.hiddenlink {
+    color: #ffffff
+}
+.hiddenlink:hover {
+    color: #0000ee
+}
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    "Noto Sans",
+    "Liberation Sans",
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
+}

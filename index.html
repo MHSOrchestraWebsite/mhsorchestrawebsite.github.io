@@ -1,0 +1,42 @@
+---
+layout: base
+---
+
+<p>
+    Memorial High School, in Eau Claire, Wisconsin, has four orchestras
+    that play in various events throughout the year - the Concert Orchestra,
+    the Old Abe Orchestra, the Chamber Orchestra, and the Entry Level
+    Orchestra. This website will provide information about the
+    orchestras for anyone interested - parents, students, alumni, and
+    more.
+</p>
+<h2>About the Orchestras</h2>
+<p>
+    The Memorial High School Orchestra is run by Soma Pierce-Smit,
+    who also runs part of the orchestra at South Middle School.
+    The Concert and Old Abe Orchestras practice every day, during
+    the first and second period, and do concerts twice a year,
+    as well as other events such as playing at Homecoming,
+    the Italian Dinner, and more.
+</p>
+<h2>Orchestra Events</h2>
+<p>
+    The orchestra plays at many events, such as two concerts each year
+    (a winter concert and a spring concert), as well as the Elementary
+    Tour (where high school students go to elementary schools and
+    convince them to take orchestra), Homecoming (where the
+    orchestra has a float), and the Italian Dinner (an orchestra
+    fundraiser where the orchestra plays Italian music at the
+    Florian Gardens), the Cookie Walk (a fundraiser where parents
+    donate cookies and the orchestra sells them) and others.
+    You can find a full schedule of the orchestra at the
+    <a href="/schedule.html">schedule page</a>.
+</p>
+<h2>Orchestra News</h2>
+<ul>
+    {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}
+    </li>
+  {% endfor %}
+</ul>
