@@ -1,5 +1,6 @@
 body {
-    background-image: url("/assets/orchestra-stock.jpg");
+    background-color: #000000;
+    background-image: url("/assets/orchroom.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -53,4 +54,10 @@ body {
     "Segoe UI Emoji",
     "Segoe UI Symbol",
     "Noto Color Emoji";
+}
+.tour-room {
+    justify-content: center;
+}
+.big {
+    font-size: 25px;
 }
