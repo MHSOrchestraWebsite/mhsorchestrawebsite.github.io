@@ -1,0 +1,16 @@
+---
+layout: base
+---
+
+<h1>Orchestra News Page</h1>
+<p>
+    This page is an archive of all of the orchestra's news posts.
+</p>
+<ul>
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}
+      </li>
+    {% endfor %}
+</ul>
+<p><small>You can view the Orchestra's news as an RSS feed <a href="/feed.xml">here</a>.</small></p>
