@@ -1,9 +1,15 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
 body {
     background-color: #000000;
     background-image: url("/assets/orchroom.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 10%;
@@ -11,7 +17,7 @@ body {
 .site {
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
     padding-top: 5%;
     background-color: #ffffff;
     border-radius: 15px;
