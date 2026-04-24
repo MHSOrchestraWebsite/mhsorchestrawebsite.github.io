@@ -13,39 +13,6 @@ body {
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 10%;
-}
-.site {
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 5%;
-    padding-top: 5%;
-    background-color: #ffffff;
-    border-radius: 15px;
-}
-.inline-image {
-    float: left;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-.topheader {
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.navigation p {
-    text-align: center;
-}
-.navigation a {
-    text-decoration: none;
-}
-.hiddenlink {
-    color: #ffffff
-}
-.hiddenlink:hover {
-    color: #0000ee
-}
-body {
   font-family:
     system-ui,
     -apple-system,
@@ -61,9 +28,204 @@ body {
     "Segoe UI Symbol",
     "Noto Color Emoji";
 }
+.site {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+.inline-image {
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 100%;
+    height: auto;
+}
+.topheader {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navigation p {
+    text-align: center;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+.navigation a {
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    min-height: 44px;
+}
+.hiddenlink {
+    color: #ffffff
+}
+.hiddenlink:hover {
+    color: #0000ee
+}
 .tour-room {
     justify-content: center;
 }
 .big {
     font-size: 25px;
+}
+
+/* Responsive iframe container */
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: solid 1px #777;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 5%;
+    }
+    .site {
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 3%;
+        padding-top: 3%;
+        border-radius: 10px;
+    }
+    .topheader {
+        height: auto;
+        padding: 15px 0;
+        min-height: 60px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .topheader img {
+        width: 80px !important;
+        height: auto;
+    }
+    .topheader h1 {
+        font-size: 1.5em;
+        margin: 10px 0;
+    }
+    .navigation {
+        overflow-x: auto;
+    }
+    .navigation p {
+        margin: 5px 0;
+        font-size: 13px;
+    }
+    .navigation a {
+        padding: 8px 5px;
+        font-size: 12px;
+        min-height: 44px;
+        min-width: auto;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .inline-image {
+        float: none;
+        display: block;
+        margin: 10px auto;
+        padding: 5px;
+        width: 100% !important;
+        max-width: 300px;
+        height: auto;
+    }
+    .tour-room {
+        width: 100% !important;
+        height: auto;
+    }
+    .big {
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    h3 {
+        font-size: 1.1em;
+    }
+    p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    ul, ol {
+        font-size: 14px;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-bottom: 3%;
+    }
+    .site {
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-bottom: 2%;
+        padding-top: 2%;
+        border-radius: 8px;
+    }
+    .topheader {
+        min-height: 50px;
+        padding: 10px 0;
+    }
+    .topheader img {
+        width: 70px !important;
+        height: auto;
+    }
+    .topheader h1 {
+        font-size: 1.3em;
+    }
+    .navigation a {
+        padding: 6px 4px;
+        font-size: 11px;
+        min-height: 40px;
+    }
+    .navigation p {
+        font-size: 11px;
+    }
+    .big {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 1.3em;
+    }
+    h2 {
+        font-size: 1.1em;
+    }
+    h3 {
+        font-size: 1em;
+    }
+    p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    ul, ol {
+        font-size: 13px;
+        padding-left: 18px;
+    }
 }
