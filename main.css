@@ -60,6 +60,21 @@ body {
     display: inline-block;
     min-height: 44px;
 }
+.announcement-banner {
+    background-color: #FFD700;
+    color: #000000;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    min-height: 1.4em;
+}
+.announcement-banner:empty {
+    display: none;
+}
 .hiddenlink {
     color: #ffffff
 }
